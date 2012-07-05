@@ -1,0 +1,106 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<diagram program="umlet" version="11.5.1">
+  <zoom_level>10</zoom_level>
+  <element>
+    <type>com.umlet.element.Class</type>
+    <coordinates>
+      <x>360</x>
+      <y>130</y>
+      <w>170</w>
+      <h>120</h>
+    </coordinates>
+    <panel_attributes>&lt;&lt;ADT&gt;&gt;
+工作/任务
+--
+-id: Long {composite}
+-类型(标签)
+-内容
+-期限</panel_attributes>
+    <additional_attributes/>
+  </element>
+  <element>
+    <type>com.umlet.element.Class</type>
+    <coordinates>
+      <x>550</x>
+      <y>130</y>
+      <w>210</w>
+      <h>80</h>
+    </coordinates>
+    <panel_attributes>&lt;&lt;ADT&gt;&gt;
+工作任务关系
+--
+-前置任务
+-后置任务</panel_attributes>
+    <additional_attributes/>
+  </element>
+  <element>
+    <type>com.umlet.element.Class</type>
+    <coordinates>
+      <x>340</x>
+      <y>270</y>
+      <w>210</w>
+      <h>230</h>
+    </coordinates>
+    <panel_attributes>&lt;&lt;ADT&gt;&gt;
+工作任务调度
+--
+-工作/任务 id
+-状态(等待-&gt;就绪-&gt;处理-&gt;完成)
+-等待时间
+-就绪时间
+-处理时间
+-完成时间
+-价值(默认10)</panel_attributes>
+    <additional_attributes/>
+  </element>
+  <element>
+    <type>com.umlet.element.Class</type>
+    <coordinates>
+      <x>170</x>
+      <y>130</y>
+      <w>170</w>
+      <h>90</h>
+    </coordinates>
+    <panel_attributes>&lt;&lt;ADT&gt;&gt;
+工作/任务 类型
+--
+-id: Long {composite}
+-类型</panel_attributes>
+    <additional_attributes/>
+  </element>
+  <element>
+    <type>com.umlet.element.Class</type>
+    <coordinates>
+      <x>120</x>
+      <y>270</y>
+      <w>210</w>
+      <h>190</h>
+    </coordinates>
+    <panel_attributes>&lt;&lt;ADT&gt;&gt;
+系统设定
+--
+奖金结算时间范围(天?月?)
+默认任务价值 (10)
+</panel_attributes>
+    <additional_attributes/>
+  </element>
+  <element>
+    <type>com.umlet.element.Class</type>
+    <coordinates>
+      <x>600</x>
+      <y>270</y>
+      <w>210</w>
+      <h>190</h>
+    </coordinates>
+    <panel_attributes>&lt;&lt;ADT&gt;&gt;
+奖金结算
+--
+-id: Long {composite}
+-新增数量
+-完成数量
+-未完成数量
+-奖金获得
+-更换次数</panel_attributes>
+    <additional_attributes/>
+  </element>
+</diagram>
